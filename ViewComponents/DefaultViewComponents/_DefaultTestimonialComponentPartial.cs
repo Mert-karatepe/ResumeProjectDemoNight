@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ResumeProjectDemoNight.Context;
 
 namespace ResumeProjectDemoNight.ViewComponents.DefaultViewComponents
 {
     public class _DefaultTestimonialComponentPartial : ViewComponent
     {
+        private readonly ResumeContext _context;
+
+        public _DefaultTestimonialComponentPartial(ResumeContext context)
+        {
+            _context = context;
+        }
+
         public IViewComponentResult Invoke()
         {
-            return View();
+            var values= _context.Testimonials.ToList();//select*from testimonials
+            return View(values);
         }
     }
 }

@@ -1,6 +1,10 @@
+using ResumeProjectDemoNight.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ResumeContext>();//dipency injection= bir yerde resumecontext ile karsıalsırsan benım yerıme otomatık newle anlamı var
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

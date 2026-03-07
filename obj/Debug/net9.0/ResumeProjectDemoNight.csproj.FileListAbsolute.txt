@@ -406,3 +406,4 @@ C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\ob
 C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\obj\Debug\net9.0\ResumeProjectDemoNight.pdb
 C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\obj\Debug\net9.0\ResumeProjectDemoNight.genruntimeconfig.cache
 C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\obj\Debug\net9.0\ref\ResumeProjectDemoNight.dll
+C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\obj\Debug\net9.0\compressed\6yhqbioyh7-{0}-uz9e2mxbpk-uz9e2mxbpk.gz

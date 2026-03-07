@@ -1,3 +1,4 @@
+wwwroot\code.html
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
@@ -283,3 +284,4 @@ C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\ww
 C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\wwwroot\templates\webfonts\fa-regular-400.svg
 C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\wwwroot\templates\webfonts\fa-solid-900.svg
 C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\wwwroot\templates\works-2.html
+C:\Users\mkaratepe\Desktop\test\ResumeProjectDemoNight\ResumeProjectDemoNight\wwwroot\code.html

@@ -15,6 +15,7 @@ namespace ResumeProjectDemoNight.Controllers
         public IActionResult Index()
         {
             ViewBag.v1=_context.Messages.Count();//Message tablosundaki kayıt sayısını v1 değişkenine atar
+            ViewBag.v1=_context.Messages.Count();//Message tablosundaki kayıt sayısını v1 değişkenine atar
             ViewBag.v2 = _context.Messages.Where(x => x.IsRead == true).Count();//Message tablosundaki IsRead değeri true olan kayıtların sayısını v2 değişkenine atar
             ViewBag.v3 = _context.Messages.Where(x => x.IsRead == false).Count();//Message tablosundaki IsRead değeri false olan kayıtların sayısını v3 değişkenine atar
             ViewBag.v4 = _context.Messages.Where(x => x.MessageId == 1).Select(y => y.NameSurname).FirstOrDefault();//Message tablosundaki MessageId değeri 1 olan kaydın NameSurname değerini v4 değişkenine atar. Eğer böyle bir kayıt yoksa, v4 değişkeni null olur.

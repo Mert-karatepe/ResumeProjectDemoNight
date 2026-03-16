@@ -1,23 +1,29 @@
-﻿<section id="home" class="home d-flex align-items-center">
+﻿@model List<ResumeProjectDemoNight.Entitites.Hero>
+<section id="home" class="home d-flex align-items-center">
 	<div class="container">
 
 		<!-- intro -->
 		<div class="intro">
-			<!-- avatar image -->
-			<img src="https://via.placeholder.com/108x108" alt="Bolby" class="mb-4" />
 
-			<!-- info -->
-			<h1 class="mb-2 mt-0">Mert KARATEPE</h1>
-			<span>Ben ' <span class="text-rotating">Full Stack Developer, Architect, Bike Lover</span></span>
+			@foreach (var item in Model)
+			{
+				<!-- avatar image -->
+				<img src="@item.ImageUrl" alt="Bolby" class="mb-4" />
+
+				<!-- info -->
+				<h1 class="mb-2 mt-0">@item.NameSurname</h1>
+				<span>Ben ' <span class="text-rotating">@item.Title</span></span>
+			
+			
 
 			<!-- social icons -->
 			<ul class="social-icons light list-inline mb-0 mt-4">
-				<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-				<li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+				<li class="list-inline-item"><a href="@item.InstagramUrl"><i class="fab fa-instagram"></i></a></li>
+				<li class="list-inline-item"><a href="@item.TwitterUrl"><i class="fab fa-twitter"></i></a></li>
+				<li class="list-inline-item"><a href="@item.BehanceUrl"><i class="fab fa-behance"></i></a></li>
+				<li class="list-inline-item"><a href="@item.PinterestUrl"><i class="fab fa-dribbble"></i></a></li>			
 			</ul>
+			}
 
 			<!-- buttons -->
 			<div class="mt-4">

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ResumeProjectDemoNight.Context;
 
@@ -11,9 +12,11 @@ using ResumeProjectDemoNight.Context;
 namespace ResumeProjectDemoNight.Migrations
 {
     [DbContext(typeof(ResumeContext))]
-    partial class ResumeContextModelSnapshot : ModelSnapshot
+    [Migration("20260314074656_mig2")]
+    partial class mig2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -216,26 +219,6 @@ namespace ResumeProjectDemoNight.Migrations
                     b.HasKey("ServiceId");
 
                     b.ToTable("Services");
-                });
-
-            modelBuilder.Entity("ResumeProjectDemoNight.Entitites.Skill", b =>
-                {
-                    b.Property<int>("SkillId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillId"));
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Value")
-                        .HasColumnType("int");
-
-                    b.HasKey("SkillId");
-
-                    b.ToTable("Skills");
                 });
 
             modelBuilder.Entity("ResumeProjectDemoNight.Entitites.Testimonial", b =>
